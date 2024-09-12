@@ -26,7 +26,7 @@ customer = {
 }
 
 response = requests.post(url, json=customer).json()
-response
+print(response)
 
 
 if response['churn'] == True:
