@@ -1,7 +1,8 @@
 import  pandas as pd
 import requests
 
-url = "http://localhost:9696/predict"
+host ='Newchurn-env.eba-rmzcwapi.us-east-1.elasticbeanstalk.com'
+url = f'http://{host}/predict'
 
 customer = {
      "gender": "male",
